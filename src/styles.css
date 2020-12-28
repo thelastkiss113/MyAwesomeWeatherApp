@@ -1,11 +1,16 @@
 body {
   font-weight: bold;
 }
-a{text-align: left;
+a {
+  text-align: left;
   font-weight: bolder;
   color: #ffb357;
-  text-shadow: 2px 2px 2px black;}
-a:hover {color:#fce3a0; text-decoration: none;}
+  text-shadow: 2px 2px 2px black;
+}
+a:hover {
+  color: #fce3a0;
+  text-decoration: none;
+}
 h1 {
   text-align: center;
   font-weight: bolder;
@@ -33,7 +38,7 @@ h6 {
 }
 p {
   color: #12b0e0;
-;
+  text-align: center;
 }
 .city {
   text-align: center;
@@ -45,7 +50,7 @@ p {
   line-height: 0px;
   object-fit: fill;
   background-color: #050505;
-  width: 312px
+  width: 312px;
 }
 .card-body {
   text-align: center;
@@ -57,9 +62,11 @@ p {
 }
 .card-text {
   color: #fce3a0;
+  text-align: center;
 }
 .container {
-  background-image: url('starrynight_blue.gif');
+  background-image: url("starrynight_blue.gif");
+  background-color: #050505;
   color: #ffb357;
   font-size: x-large;
   border-color: #ffb357;
@@ -69,18 +76,20 @@ p {
   padding: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-right: 20px;
   width: 500px;
 }
 .card-header {
-  display: block;
   color: #ff8e9e;
   text-align: center;
-  width: fit-content;
+  margin: 0px;
+  padding: 10px;
+  background-color: rgb(12, 14, 13);
   text-shadow: 1px 1px 1px black;
-  background-color: #0b0c0c;
 }
 .blockquote {
   display: block;
+  text-align: center;
   width: fit-content;
   text-align: center;
   background-color: #2d2d2e;
@@ -89,5 +98,5 @@ p {
 }
 .forecast {
   text-shadow: 1px 1px 1px black;
- background-color: rgb(12, 14, 13);
+  background-color: rgb(12, 14, 13);
 }

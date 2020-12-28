@@ -16,7 +16,7 @@ function formatDate(date) {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday",
+    "Saturday"
   ];
   let day = days[dayIndex];
 
@@ -28,13 +28,12 @@ function displayWeatherCondition(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-
-  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#wind").innerHTML = Math.round(
-    response.data.wind.speed
-  );
-  document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+  //  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  //  document.querySelector("#wind").innerHTML = Math.round(
+  //   response.data.wind.speed
+  // );
+  // document.querySelector("#description").innerHTML =
+  //   response.data.weather[0].main;
 }
 
 function searchCity(city) {
@@ -61,17 +60,17 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 66;
-}
+// function convertToFahrenheit(event) {
+//  event.preventDefault();
+//  let temperatureElement = document.querySelector("#temperature");
+//  temperatureElement.innerHTML = 66;
+// }
 
-function convertToCelsius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 19;
-}
+//function convertToCelsius(event) {
+// event.preventDefault();
+//  let temperatureElement = document.querySelector("#temperature");
+//  temperatureElement.innerHTML = 19;
+// }
 
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
