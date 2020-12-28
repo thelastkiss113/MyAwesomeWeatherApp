@@ -65,7 +65,7 @@ p {
   text-align: center;
 }
 .container {
-  background-image: url("starrynight_blue.gif");
+  background-image: url(starrynight_blue.gif);
   background-color: #050505;
   color: #ffb357;
   font-size: x-large;
